@@ -5,7 +5,7 @@ function Header() {
   return (
     <nav className="orange darken-4">
       <div className="nav-wrapper">
-        <Link to="#" className="brand-logo">
+        <Link to="/" className="brand-logo">
           FOOD
         </Link>
         <ul id="nav-mobile" className="right hide-on-med-and-down">
