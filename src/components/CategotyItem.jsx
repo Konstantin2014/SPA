@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function CategoryItem(props) {
   const {
-    idCategory,
+    // idCategory,
     strCategory,
     strCategoryThumb,
     strCategoryDescription,
@@ -19,7 +19,7 @@ function CategoryItem(props) {
         <p>{strCategoryDescription.slice(0, 60)}...</p>
       </div>
       <div className="card-action">
-        <Link to={`/categoty/${idCategory}`} className="btn  orange accent-3">
+        <Link to={`/category/${strCategory}`} className="btn  orange accent-3">
           Watch category
         </Link>
       </div>
