@@ -8,7 +8,7 @@ import React from "react";
 function Category() {
   const { name } = useParams();
   const [meals, setMeals] = useState([]);
-  const { goBack } = useNavigate();
+  let navigate = useNavigate();
 
   useEffect(() => {
     getFilteredCategory(name).then((data) => setMeals(data.meals));
@@ -16,7 +16,7 @@ function Category() {
 
   return (
     <>
-      <button className="btn" onClick={goBack}>
+      <button className="btn orange accent-3" onClick={() => navigate(-1)}>
         Go Back
       </button>
       {!meals.length ? <Preloader /> : <MealList meals={meals} />}
